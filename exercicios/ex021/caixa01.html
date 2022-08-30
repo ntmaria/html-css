@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{/* box-level*/
+            background-color: bisque;
+            height: 300px;
+            width: 300px;
+
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkgray;*/
+
+            border: 10px solid darkgray;
+
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            Quando possui 4 valores iguais, pode-se colocar apenas um valor na shorthand.
+            Quando possui dois valores diferentes, pode-se colocar os dois valores apenas, o de baixo será repetido o de cima e o da direita será repetido na esquerda.
+            */
+
+            padding: 10px 10px 10px 10px;
+
+           /*margin: auto; (para centralizar a caixa)*/
+
+            /*margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+            Pode-se colocar auto nas margens da esquerda e da direita para centralizar a caixa*/
+
+            margin: 20px 20px 40px 20px;
+
+            /*outline-width: 5px;
+            outline-style: dashed;
+            outline-color: chocolate;*/
+
+            outline: 5px dashed chocolate;
+        }
+
+        a{ /*inline-level*/
+            border: 10px solid coral;
+            
+            padding: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como isso funciona.</p>
+</body>
+</html>
