@@ -49,11 +49,13 @@ section.normal{
 section.imagem{
     background-color: rgb(51, 51, 51);
     color: white;
+    /* background: url('imagens/background002.jpg') fixed; */
 }
 
 section.imagem > p{
     width: 400px;
     background-color: rgba(0, 0, 0, 0.253);
+    padding: 5px; /*coloquei pq quis*/
 }
 
 footer{
