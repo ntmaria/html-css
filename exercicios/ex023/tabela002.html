@@ -20,12 +20,30 @@
             padding: 10px;
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #80f0dd;
+            border: 2px solid #a425ee;
+        }
+
         thead, tfoot{
             background-color: yellow;
             color: #444;
         }
 
-        .num{
+        tbody tr:nth-child(odd){
+            /* no lugar de odd pode-se usar 2n-1 */
+            background-color: #ffd6d6;
+        }
+        
+        tbody tr:nth-child(even){
+            /* no lugar de even pode usar 2n */
+            background-color: #cab1db;
+        }
+
+        td.num{
             text-align: right;
         }
     </style>
@@ -35,6 +53,7 @@
     <!-- 
             Anatomia para tabelas grandes
             Table = tabela
+            Caption = legenda
                 THead
                 (tr, td, th)
                     TBody
@@ -44,10 +63,14 @@
             
         -->
         <table>
+            <caption>
+                População das unidades federativas
+                <!-- ocupa largur inteira da tabela -->
+            </caption>
             <thead>
                 <tr>
-                    <th>Estado</th>
-                    <th>População</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
                 </tr>
             </thead>
             <tbody>
@@ -164,7 +187,7 @@
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de habitantes</th>
+                    <th scope="row">Total de habitantes</th>
                     <td class="num"><strong>210.147.125</strong></td>
                 </tr>
             </tfoot>
