@@ -26,11 +26,28 @@
             border: 2px solid lightslategray;
             padding: 8px;
         }
+
+        .destaque{
+            background-color: chartreuse;
+        }
+
+        col.cnome{
+            background-color: chartreuse;
+        }
+        col.cgroup{
+            background-color: pink;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício de Tabelas</h1>
     <table>
+        <colgroup>
+            <col class="cnome"><!-- colocar número de "col" igual ao número de colunas, ex.: 3 colunas = 3 tags <col> dentro de <colgroup>-->
+            <col class="cgroup" span="2"><!--para 2 colunas em sequência-->
+            <!-- <col class="cidade"> -->
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -50,7 +67,7 @@
             <td>28</td>
             <td>Programador</td>
         </tr>
-        <tr class="destaque">
+        <tr>
             <td>Gustavo</td>
             <td>M</td>
             <td>42</td>
