@@ -22,16 +22,20 @@
         }
 
         th, td{
-            border: 2px solid pink;
+            border: 2px solid lightsteelblue;
             padding: 10px;
             width: 100px;
+        }
+
+        .bg{
+            background-color: lightyellow;
         }
     </style>
 </head>
 <body>
     <table>
         <caption>Boletim</caption>
-        <thead>
+        <thead class="bg">
             <tr>
                 <th rowspan="2" scope="col">Area</th>
                 <th rowspan="2" scope="col">Disciplina</th>
@@ -70,8 +74,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="row">Média Exatas</th>
-                <td>0.0</td>
+                <th colspan="4" scope="row" class="bg">Média Exatas</th>
+                <td class="bg">0.0</td>
             </tr>
             <tr>
                 <th rowspan="2" scope="rowgroup">Humanas</th>
@@ -87,8 +91,8 @@
                 <td>0.0</td>
             </tr>
             <tr>
-                <th colspan="4" scope="row">Média Humanas</th>
-                <td>0.0</td>
+                <th colspan="4" scope="row" class="bg">Média Humanas</th>
+                <td class="bg">0.0</td>
             </tr>
         </tbody>
     </table>
