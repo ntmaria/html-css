@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
  /* declarações gerais */
- *{
+ @media all {
+    *{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -23,7 +24,8 @@
         background-size: contain;
         background-repeat: no-repeat;
     }
-
+ }
+ 
         /* Declarações para retrato  */
         @media screen and (orientation:portrait) {
             body{
