@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/* Mobile first */
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -20,8 +20,24 @@ header > h1{
 }
 
 menu{
-    display: block;
+    display: none;
 }
+
+#burguer{
+    background-color: rgb(48, 48, 48);
+    width: 100vw;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer; /* quando passa mouse em cima vira "mãozinha" */
+}
+
+#burguer:hover{
+    background-color: white;
+    color: black;
+}
+
 
 menu > ul{
     list-style-type: none;
@@ -41,7 +57,7 @@ menu > ul > li > a:hover{
     background-color: gray;
 }
 
-main{
+main {
     width: 90vw;
     background-color: white;
     margin: 10px auto auto auto;
@@ -49,11 +65,11 @@ main{
     border-radius: 10px;
 }
 
-article > h2{
+article > h2 {
     padding-bottom: 20px;
 }
 
-article > p{
+article > p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
