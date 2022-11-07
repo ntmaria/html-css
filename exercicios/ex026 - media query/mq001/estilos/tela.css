@@ -26,7 +26,7 @@ menu ul{
 }
 
 menu li{
-    display: inline-block;
+    display: inline-block; /* itens um do lado do outro */
     padding: 10px;
     background-color: rgb(75, 75, 75);
 }
