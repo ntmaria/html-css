@@ -18,7 +18,9 @@ Grandes telas: acima de 1200px
     }
     
     body{
-        /* background-image: url(../imagens/back-print.jpg); desnecessário pois o modo print não aceita imagem de background  */
+        /*
+        background-image: url(../imagens/back-print.jpg); desnecessário pois o modo print não aceita imagem de background 
+        */
         color: black;
     }
 
